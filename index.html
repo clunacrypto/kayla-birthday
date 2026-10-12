@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Kayla 🐞</title>
+  <meta name="description" content="Something special for Kayla Mabalot's 22nd birthday">
+  <meta name="theme-color" content="#ffe1ec">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="For Kayla Mabalot 🎀">
+  <meta property="og:description" content="A little birthday surprise. Open me ♡">
+  <meta property="og:image" content="https://clunacrypto.github.io/kayla-birthday/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://clunacrypto.github.io/kayla-birthday/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐞</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600;700&family=Pinyon+Script&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sections.css">
+</head>
+<body>
+  <!-- Reusable ladybug drawing -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="ladybug" viewBox="0 0 64 64">
+        <g stroke="#2b1a22" stroke-width="2.4" stroke-linecap="round" fill="none">
+          <path d="M27 9 Q22 2 17 4"/><path d="M37 9 Q42 2 47 4"/>
+          <path d="M13 30 L4 26"/><path d="M11 40 L3 41"/><path d="M14 50 L6 56"/>
+          <path d="M51 30 L60 26"/><path d="M53 40 L61 41"/><path d="M50 50 L58 56"/>
+        </g>
+        <ellipse cx="32" cy="17" rx="11" ry="9" fill="#2b1a22"/>
+        <circle cx="27" cy="14" r="2.2" fill="#fff"/><circle cx="37" cy="14" r="2.2" fill="#fff"/>
+        <circle cx="32" cy="39" r="21" fill="#e6334a"/>
+        <path d="M32 19 V60" stroke="#2b1a22" stroke-width="2.4"/>
+        <g fill="#2b1a22">
+          <circle cx="22" cy="31" r="4"/><circle cx="42" cy="31" r="4"/>
+          <circle cx="19" cy="45" r="4.4"/><circle cx="45" cy="45" r="4.4"/>
+          <circle cx="26" cy="55" r="3"/><circle cx="38" cy="55" r="3"/>
+        </g>
+        <ellipse cx="23" cy="26" rx="5" ry="3" fill="#fff" opacity=".35" transform="rotate(-30 23 26)"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. Lock screen -->
+  <section id="lock" class="screen lock">
+    <div class="lock-card" id="lockCard">
+      <svg class="padlock" id="padlock" viewBox="0 -24 100 116" aria-hidden="true">
+        <defs>
+          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff1a8"/><stop offset=".5" stop-color="#ffd95e"/><stop offset="1" stop-color="#f2b632"/>
+          </linearGradient>
+        </defs>
+        <path class="shackle" d="M32 30 V14 a18 18 0 0 1 36 0 V30" fill="none" stroke="#f2b632" stroke-width="8" stroke-linecap="round"/>
+        <path d="M50 88 C20 66 6 52 6 36 C6 22 17 12 30 12 C39 12 46 17 50 24 C54 17 61 12 70 12 C83 12 94 22 94 36 C94 52 80 66 50 88Z" fill="url(#gold)" stroke="#e9a91e" stroke-width="2"/>
+        <circle cx="50" cy="44" r="7" fill="#7a4b12"/><path d="M46.5 46 L44 62 H56 L53.5 46Z" fill="#7a4b12"/>
+        <use href="#ladybug" x="66" y="56" width="26" height="26" transform="rotate(20 79 69)"/>
+      </svg>
+      <p class="lock-from">For Kayla Mabalot</p>
+      <p class="lock-hint" id="lockHint"></p>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+      <div class="keypad" id="keypad">
+        <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+        <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+        <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+        <span></span><button data-key="0">0</button><button data-key="del" aria-label="delete">⌫</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The question -->
+  <section id="ask" class="screen ask" hidden>
+    <div class="pxwin">
+      <div class="pxwin-bar"><span>LOVE.exe</span><span class="pxwin-btns"><i>_</i><i>□</i><i>×</i></span></div>
+      <div class="pxwin-hearts">♥ · ♥ · ♥</div>
+      <div class="pxwin-body" id="askBody">
+        <p id="askText">Happy birthday, princess ♡ Still love me?</p>
+        <div class="pxbug" id="pxBug" aria-hidden="true"></div>
+        <img class="ask-react" id="askReact" alt="" hidden>
+        <div class="pxwin-actions">
+          <button class="pxbtn yes" id="yesBtn">YES</button>
+          <button class="pxbtn no" id="noBtn">NO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. The main site -->
+  <main id="main" hidden>
+    <header class="hero">
+      <p class="kicker">October 12 · 2026</p>
+      <h1>
+        <span class="hero-age">22nd</span>
+        <span class="hero-big">Happy Birthday,</span>
+        <span class="hero-script">Kayla Mabalot</span>
+      </h1>
+      <div class="collage" id="heroCollage"></div>
+      <p class="scroll-cue">Scroll down, birthday girl ↓</p>
+    </header>
+
+    <section class="sec reveal">
+      <div class="letter">
+        <h2 class="letter-title">A Love Letter</h2>
+        <p class="letter-sub">Only for Kayla ♡</p>
+        <div class="letter-body" id="letterBody"></div>
+        <svg class="letter-seal" aria-hidden="true"><use href="#ladybug"/></svg>
+      </div>
+    </section>
+
+    <section class="sec reveal days">
+      <p class="kicker">Since March 23, 2026</p>
+      <p class="days-num" id="daysTogether">0</p>
+      <p class="days-label">Days of you, and counting</p>
+    </section>
+
+    <section class="sec reveal" id="songSection" hidden>
+      <h2 class="sec-title">A Song That Reminds Me of Us</h2>
+      <p class="sec-sub">We really are the perfect two ♡</p>
+      <div class="songs" id="songs"></div>
+      <p class="song-note" id="songNote"></p>
+    </section>
+
+    <section class="sec reveal">
+      <h2 class="sec-title">Kayla Major</h2>
+      <p class="sec-sub">My favorite constellation: seven stars, all on your face. Tap each one.</p>
+      <div class="constellation">
+        <svg id="constellation" viewBox="0 0 200 240" aria-label="seven moles drawn as stars"></svg>
+      </div>
+      <p class="star-note" id="starNote">Found 0 / 7 ✦</p>
+      <div class="mole-proof" id="moleProof"></div>
+    </section>
+
+    <section class="sec reveal">
+      <h2 class="sec-title">Gifts Just For You</h2>
+      <p class="sec-sub">Tap to open</p>
+      <div class="gifts" id="gifts">
+        <button class="gift" data-gift="cake" style="--c:var(--pink)"><span class="box"></span><span class="lid"></span><span class="bow">🎀</span><span class="gift-label">Cake</span></button>
+        <button class="gift" data-gift="flowers" style="--c:var(--yellow)"><span class="box"></span><span class="lid"></span><span class="bow">🎀</span><span class="gift-label">Flowers</span></button>
+        <button class="gift" data-gift="coupons" style="--c:var(--blue)"><span class="box"></span><span class="lid"></span><span class="bow">🎀</span><span class="gift-label">Surprise</span></button>
+        <button class="gift" data-gift="tarot" style="--c:#c9b6ff"><span class="box"></span><span class="lid"></span><span class="bow">🎀</span><span class="gift-label">Your Reading</span></button>
+      </div>
+    </section>
+
+    <section class="sec reveal">
+      <div class="ticket">
+        <p class="ticket-brand">🍨 Papa's Freezeria 🍨</p>
+        <p class="ticket-meta">ORDER #22 · Calypso Island</p>
+        <p class="ticket-meta">Customer: <b>Kayla Mabalot</b></p>
+        <ul class="ticket-items" id="ticketItems"></ul>
+        <p class="ticket-rating">★★★★★<br><span>Perfect order · Tip: one kiss</span></p>
+      </div>
+    </section>
+
+    <section class="sec reveal mc">
+      <div class="mc-panel">
+        <p class="mc-tag">ShannonStar</p>
+        <img class="mc-skin" id="mcSkin" alt="kayla's minecraft skin">
+        <ul class="mc-toasts" id="mcToasts"></ul>
+        <p class="mc-text">First username: <b>ShannonStar</b><br>Dream job: <b>Minecraft YouTuber</b><br>Raised by SkyDoesMinecraft, LDShadowLady &amp; SamGladiator</p>
+        <p class="mc-text mc-love">You're my favorite person in every world, every seed. 💚</p>
+      </div>
+    </section>
+
+    <section class="sec reveal">
+      <h2 class="sec-title">All About Kayla</h2>
+      <p class="sec-sub">A very official archive</p>
+      <div class="board" id="loreBoard"></div>
+    </section>
+
+
+    <section class="sec reveal finale">
+      <div class="finale-pals"><svg class="finale-bug" aria-hidden="true"><use href="#ladybug"/></svg><img class="finale-flug" src="photos/flug.png" alt="flug"></div>
+      <p class="finale-line">Distance means so little<br>when someone means <em>so much</em>.</p>
+      <p class="hero-script finale-name">Happy 22nd, Kayla</p>
+      <p class="finale-from" id="finaleFrom"></p>
+      <button class="cta" id="celebrateBtn">One more time 🎉</button>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-x" id="modalClose" aria-label="close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="effects.js"></script>
+  <script src="sections.js"></script>
+  <script src="gifts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
